@@ -9,7 +9,7 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
 # Constants for the dot dimensions and initial position
-DOT_SIZE = 100  # Increase this value to make the dot bigger
+DOT_SIZE = 300  # Increase this value to make the dot bigger
 DOT_COLOR = (0, 0, 0)  # Black
 DOT_SPEED = 5
 
@@ -19,7 +19,7 @@ screen.fill((255, 255, 255))  # White background
 pygame.display.set_caption("Dot Controller")
 
 # Initialize the Serial connection to the Arduino
-ser = serial.Serial('COM5', 38400)  # Replace 'COMX' with your Arduino's COM port
+ser = serial.Serial('COM6', 38400)  # Replace 'COMX' with your Arduino's COM port
 
 # Initialize dot position
 dot_x = SCREEN_WIDTH // 2
